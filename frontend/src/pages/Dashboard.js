@@ -45,7 +45,7 @@ function App() {
     }, 2500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [placeholders.length]);
 
   const handleSubmit = async () => {
     if (!text.trim()) return;
