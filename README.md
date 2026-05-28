@@ -1,17 +1,27 @@
-# 💰 Smart Expense Tracker
+# 💰 Smart Expense Tracker (SpendSense)
 
-A full-stack expense tracking web application built using **Django REST Framework** and **React** that helps users manage and monitor their expenses efficiently.
+A full-stack expense tracking web application built using **Django REST Framework** and **React** that helps users manage, organize, and monitor their expenses efficiently.
+
+## 🌐 Live Demo
+
+**Frontend (Vercel):**
+https://spendsense-ai-kappa.vercel.app/
+
+**Backend API (Render):**
+https://spendsense-ai-1.onrender.com/
+
+---
 
 ## 🚀 Features
 
-* 🔐 User Authentication (Signup & Login)
+* 🔐 Secure User Authentication (Signup & Login using JWT)
 * 💸 Add, Edit, and Delete Expenses
 * 📊 Expense Tracking Dashboard
 * 📅 Date-wise Expense Management
 * 📂 Category-based Expense Organization
 * 🔄 REST API Integration
-* 📱 Responsive UI
-* ☁️ Deployment Ready (Render + Vercel)
+* 📱 Responsive User Interface
+* ☁️ Fully Deployed using Render + Vercel
 
 ---
 
@@ -28,7 +38,8 @@ A full-stack expense tracking web application built using **Django REST Framewor
 
 * Django
 * Django REST Framework
-* SQLite / PostgreSQL
+* JWT Authentication
+* SQLite
 
 ### Deployment
 
@@ -40,10 +51,11 @@ A full-stack expense tracking web application built using **Django REST Framewor
 ## 📂 Project Structure
 
 ```bash
-expense-tracker/
+spendsense-ai/
 │
 ├── backend/
-│   ├── api/
+│   ├── config/
+│   ├── expenses/
 │   ├── manage.py
 │   └── requirements.txt
 │
@@ -59,16 +71,16 @@ expense-tracker/
 
 ## ⚙️ Installation & Setup
 
-### 1. Clone the Repository
+### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/expense-tracker.git
-cd expense-tracker
+git clone https://github.com/Bhavdeepq/spendsense-ai.git
+cd spendsense-ai
 ```
 
 ---
 
-### 2. Backend Setup (Django)
+## Backend Setup (Django)
 
 Create virtual environment:
 
@@ -78,7 +90,7 @@ python -m venv venv
 
 Activate virtual environment:
 
-Windows:
+### Windows
 
 ```bash
 venv\Scripts\activate
@@ -96,7 +108,7 @@ Apply migrations:
 python manage.py migrate
 ```
 
-Run backend server:
+Run backend:
 
 ```bash
 python manage.py runserver
@@ -110,7 +122,7 @@ http://127.0.0.1:8000/
 
 ---
 
-### 3. Frontend Setup (React)
+## Frontend Setup (React)
 
 Move to frontend folder:
 
@@ -140,14 +152,14 @@ http://localhost:3000/
 
 ## 🔌 API Endpoints
 
-| Method | Endpoint       | Description    |
-| ------ | -------------- | -------------- |
-| POST   | /signup/       | Register user  |
-| POST   | /login/        | User login     |
-| GET    | /expenses/     | Fetch expenses |
-| POST   | /expenses/     | Add expense    |
-| PUT    | /expenses/:id/ | Update expense |
-| DELETE | /expenses/:id/ | Delete expense |
+| Method | Endpoint           | Description    |
+| ------ | ------------------ | -------------- |
+| POST   | /api/signup/       | Register User  |
+| POST   | /api/login/        | User Login     |
+| GET    | /api/expenses/     | Fetch Expenses |
+| POST   | /api/expenses/     | Add Expense    |
+| PUT    | /api/expenses/:id/ | Update Expense |
+| DELETE | /api/expenses/:id/ | Delete Expense |
 
 ---
 
@@ -170,12 +182,12 @@ Example:
 
 ## 🎯 Future Improvements
 
-* Expense Analytics & Charts
-* Budget Limit Alerts
-* Monthly Reports
-* Export to CSV/PDF
-* Dark Mode
-* AI-based Spending Insights
+* 📈 Expense Analytics & Charts
+* 💰 Budget Limit Alerts
+* 📊 Monthly Reports
+* 📄 Export to CSV/PDF
+* 🌙 Dark Mode
+* 🤖 AI-based Spending Insights
 
 ---
 
@@ -194,6 +206,5 @@ Contributions are welcome.
 ## 👨‍💻 Author
 
 **Bhavdeep Singh**
-
 B.Tech CSE (AI & ML)
 Passionate about Full Stack Development, AI/ML, and solving real-world problems.
